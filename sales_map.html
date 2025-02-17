@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_301b0c8e310ffbe58741a3d7ee343f3d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_301b0c8e310ffbe58741a3d7ee343f3d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_301b0c8e310ffbe58741a3d7ee343f3d = L.map(
+                "map_301b0c8e310ffbe58741a3d7ee343f3d",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 1,
+  "zoomControl": true,
+  "preferCanvas": false,
+  "Location": [
+53.59859999999999,
+-92.02381538461539,
+],
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_af07947adc596cde63985f2991b04cd1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_af07947adc596cde63985f2991b04cd1.addTo(map_301b0c8e310ffbe58741a3d7ee343f3d);
+        
+    
+            var marker_601d3f2d7675bd812d297d60bfb70625 = L.marker(
+                [-116.5765, 53.9333],
+                {
+}
+            ).addTo(map_301b0c8e310ffbe58741a3d7ee343f3d);
+        
+    
+        var popup_3663ad594f85f48ed0e213f9cb8fd5ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3217ce2340de7c5a0ca41a539def5073 = $(`<div id="html_3217ce2340de7c5a0ca41a539def5073" style="width: 100.0%; height: 100.0%;">Location: Alberta<br>Total Sales: 111658.06</div>`)[0];
+                popup_3663ad594f85f48ed0e213f9cb8fd5ce.setContent(html_3217ce2340de7c5a0ca41a539def5073);
+            
+        
+
+        marker_601d3f2d7675bd812d297d60bfb70625.bindPopup(popup_3663ad594f85f48ed0e213f9cb8fd5ce)
+        ;
+
+        
+    
+    
+            marker_601d3f2d7675bd812d297d60bfb70625.bindTooltip(
+                `<div>
+                     Alberta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d14199cb9a545389a3a0db2d17424ce2 = L.marker(
+                [-127.6476, 53.7267],
+                {
+}
+            ).addTo(map_301b0c8e310ffbe58741a3d7ee343f3d);
+        
+    
+        var popup_6dc533ec5d1903badb8325f54cf403bd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1f823892103ac08fc0f7a33351bc5262 = $(`<div id="html_1f823892103ac08fc0f7a33351bc5262" style="width: 100.0%; height: 100.0%;">Location: British Columbia<br>Total Sales: 115722.4</div>`)[0];
+                popup_6dc533ec5d1903badb8325f54cf403bd.setContent(html_1f823892103ac08fc0f7a33351bc5262);
+            
+        
+
+        marker_d14199cb9a545389a3a0db2d17424ce2.bindPopup(popup_6dc533ec5d1903badb8325f54cf403bd)
+        ;
+
+        
+    
+    
+            marker_d14199cb9a545389a3a0db2d17424ce2.bindTooltip(
+                `<div>
+                     British Columbia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8e939ccc388ebd742ada248b51b6562d = L.marker(
+                [-98.8139, 53.7609],
+                {
+}
+            ).addTo(map_301b0c8e310ffbe58741a3d7ee343f3d);
+        
+    
+        var popup_09b4307d2a4a55d9fd06ebb969919f19 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8b9bd3bbab04f0ce957bdfe0368006d2 = $(`<div id="html_8b9bd3bbab04f0ce957bdfe0368006d2" style="width: 100.0%; height: 100.0%;">Location: Manitoba<br>Total Sales: 103691.9</div>`)[0];
+                popup_09b4307d2a4a55d9fd06ebb969919f19.setContent(html_8b9bd3bbab04f0ce957bdfe0368006d2);
+            
+        
+
+        marker_8e939ccc388ebd742ada248b51b6562d.bindPopup(popup_09b4307d2a4a55d9fd06ebb969919f19)
+        ;
+
+        
+    
+    
+            marker_8e939ccc388ebd742ada248b51b6562d.bindTooltip(
+                `<div>
+                     Manitoba
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0fa58b4730173ec9a11db7c9884fdcbe = L.marker(
+                [-66.4619, 46.5653],
+                {
+}
+            ).addTo(map_301b0c8e310ffbe58741a3d7ee343f3d);
+        
+    
+        var popup_a14436da56516f552a18021c45c6e5e1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f50a89fdf9946ae11642a42807f6229 = $(`<div id="html_2f50a89fdf9946ae11642a42807f6229" style="width: 100.0%; height: 100.0%;">Location: New Brunswick<br>Total Sales: 109244.06</div>`)[0];
+                popup_a14436da56516f552a18021c45c6e5e1.setContent(html_2f50a89fdf9946ae11642a42807f6229);
+            
+        
+
+        marker_0fa58b4730173ec9a11db7c9884fdcbe.bindPopup(popup_a14436da56516f552a18021c45c6e5e1)
+        ;
+
+        
+    
+    
+            marker_0fa58b4730173ec9a11db7c9884fdcbe.bindTooltip(
+                `<div>
+                     New Brunswick
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_00f6e4e1f2afd302166058f27fae8c18 = L.marker(
+                [-61.7388, 54.2731],
+                {
+}
+            ).addTo(map_301b0c8e310ffbe58741a3d7ee343f3d);
+        
+    
+        var popup_b9f95a029ceac558b1b70b2ebe9e3f55 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2edecf8e3ed97ef00d713de32b7e1d0f = $(`<div id="html_2edecf8e3ed97ef00d713de32b7e1d0f" style="width: 100.0%; height: 100.0%;">Location: Newfoundland and Labrador<br>Total Sales: 99524.7</div>`)[0];
+                popup_b9f95a029ceac558b1b70b2ebe9e3f55.setContent(html_2edecf8e3ed97ef00d713de32b7e1d0f);
+            
+        
+
+        marker_00f6e4e1f2afd302166058f27fae8c18.bindPopup(popup_b9f95a029ceac558b1b70b2ebe9e3f55)
+        ;
+
+        
+    
+    
+            marker_00f6e4e1f2afd302166058f27fae8c18.bindTooltip(
+                `<div>
+                     Newfoundland and Labrador
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_66768a20ca97ac43b27b584bd8b4f127 = L.marker(
+                [-115.5069, 63.5888],
+                {
+}
+            ).addTo(map_301b0c8e310ffbe58741a3d7ee343f3d);
+        
+    
+        var popup_fa16969eae466c129a0ee082b1c65b19 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9f9af992bf4beb61930a6346524e88d7 = $(`<div id="html_9f9af992bf4beb61930a6346524e88d7" style="width: 100.0%; height: 100.0%;">Location: Northwest Territories<br>Total Sales: 106736.57</div>`)[0];
+                popup_fa16969eae466c129a0ee082b1c65b19.setContent(html_9f9af992bf4beb61930a6346524e88d7);
+            
+        
+
+        marker_66768a20ca97ac43b27b584bd8b4f127.bindPopup(popup_fa16969eae466c129a0ee082b1c65b19)
+        ;
+
+        
+    
+    
+            marker_66768a20ca97ac43b27b584bd8b4f127.bindTooltip(
+                `<div>
+                     Northwest Territories
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ff486e95feac26719017540e0c69c035 = L.marker(
+                [-63.5467, 45.0778],
+                {
+}
+            ).addTo(map_301b0c8e310ffbe58741a3d7ee343f3d);
+        
+    
+        var popup_89d0cc6a2ae5e68ea782b6148136fc31 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3e8526ad3f185a29a519d60a9cdb812c = $(`<div id="html_3e8526ad3f185a29a519d60a9cdb812c" style="width: 100.0%; height: 100.0%;">Location: Nova Scotia<br>Total Sales: 106940.69</div>`)[0];
+                popup_89d0cc6a2ae5e68ea782b6148136fc31.setContent(html_3e8526ad3f185a29a519d60a9cdb812c);
+            
+        
+
+        marker_ff486e95feac26719017540e0c69c035.bindPopup(popup_89d0cc6a2ae5e68ea782b6148136fc31)
+        ;
+
+        
+    
+    
+            marker_ff486e95feac26719017540e0c69c035.bindTooltip(
+                `<div>
+                     Nova Scotia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4b87514429b7338166452fb317894459 = L.marker(
+                [-84.8896, 64.248],
+                {
+}
+            ).addTo(map_301b0c8e310ffbe58741a3d7ee343f3d);
+        
+    
+        var popup_2ece6874d42f571b71a25a67cadd82de = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d77f252c95061322789b31fbe59281d = $(`<div id="html_7d77f252c95061322789b31fbe59281d" style="width: 100.0%; height: 100.0%;">Location: Nunavut<br>Total Sales: 112635.27</div>`)[0];
+                popup_2ece6874d42f571b71a25a67cadd82de.setContent(html_7d77f252c95061322789b31fbe59281d);
+            
+        
+
+        marker_4b87514429b7338166452fb317894459.bindPopup(popup_2ece6874d42f571b71a25a67cadd82de)
+        ;
+
+        
+    
+    
+            marker_4b87514429b7338166452fb317894459.bindTooltip(
+                `<div>
+                     Nunavut
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_277cec9a55598874a8bf7ced3333e045 = L.marker(
+                [-85.3232, 51.2538],
+                {
+}
+            ).addTo(map_301b0c8e310ffbe58741a3d7ee343f3d);
+        
+    
+        var popup_3d1159b39af8ce7c726026ec9f63d200 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_57316624c183a654f862559096958661 = $(`<div id="html_57316624c183a654f862559096958661" style="width: 100.0%; height: 100.0%;">Location: Ontario<br>Total Sales: 111016.53</div>`)[0];
+                popup_3d1159b39af8ce7c726026ec9f63d200.setContent(html_57316624c183a654f862559096958661);
+            
+        
+
+        marker_277cec9a55598874a8bf7ced3333e045.bindPopup(popup_3d1159b39af8ce7c726026ec9f63d200)
+        ;
+
+        
+    
+    
+            marker_277cec9a55598874a8bf7ced3333e045.bindTooltip(
+                `<div>
+                     Ontario
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f7cb11150362439e1a264f4905620860 = L.marker(
+                [-63.1461, 46.3188],
+                {
+}
+            ).addTo(map_301b0c8e310ffbe58741a3d7ee343f3d);
+        
+    
+        var popup_74aa5e56af93f3885487540cf1c3039b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4fa5ce377e9eb7e1aa905da5d46faaf0 = $(`<div id="html_4fa5ce377e9eb7e1aa905da5d46faaf0" style="width: 100.0%; height: 100.0%;">Location: Prince Edward Island<br>Total Sales: 108176.17</div>`)[0];
+                popup_74aa5e56af93f3885487540cf1c3039b.setContent(html_4fa5ce377e9eb7e1aa905da5d46faaf0);
+            
+        
+
+        marker_f7cb11150362439e1a264f4905620860.bindPopup(popup_74aa5e56af93f3885487540cf1c3039b)
+        ;
+
+        
+    
+    
+            marker_f7cb11150362439e1a264f4905620860.bindTooltip(
+                `<div>
+                     Prince Edward Island
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_84aba69b4cfff710ed8a294191a0eefb = L.marker(
+                [-71.2075, 46.8131],
+                {
+}
+            ).addTo(map_301b0c8e310ffbe58741a3d7ee343f3d);
+        
+    
+        var popup_15b20d155b7bc3b2035cc77af45a5c67 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d3ca61b77c9a9bb1bfe1e9a578e0c6d = $(`<div id="html_6d3ca61b77c9a9bb1bfe1e9a578e0c6d" style="width: 100.0%; height: 100.0%;">Location: Quebec<br>Total Sales: 102403.01</div>`)[0];
+                popup_15b20d155b7bc3b2035cc77af45a5c67.setContent(html_6d3ca61b77c9a9bb1bfe1e9a578e0c6d);
+            
+        
+
+        marker_84aba69b4cfff710ed8a294191a0eefb.bindPopup(popup_15b20d155b7bc3b2035cc77af45a5c67)
+        ;
+
+        
+    
+    
+            marker_84aba69b4cfff710ed8a294191a0eefb.bindTooltip(
+                `<div>
+                     Quebec
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_829e5cb213134eb5ca513db14c01ed22 = L.marker(
+                [-106.4509, 52.9399],
+                {
+}
+            ).addTo(map_301b0c8e310ffbe58741a3d7ee343f3d);
+        
+    
+        var popup_f8fe65bf77fe1853766f5a68a2469e43 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c11cea58a1f022bf0bf25c21da9fa91 = $(`<div id="html_4c11cea58a1f022bf0bf25c21da9fa91" style="width: 100.0%; height: 100.0%;">Location: Saskatchewan<br>Total Sales: 107058.36</div>`)[0];
+                popup_f8fe65bf77fe1853766f5a68a2469e43.setContent(html_4c11cea58a1f022bf0bf25c21da9fa91);
+            
+        
+
+        marker_829e5cb213134eb5ca513db14c01ed22.bindPopup(popup_f8fe65bf77fe1853766f5a68a2469e43)
+        ;
+
+        
+    
+    
+            marker_829e5cb213134eb5ca513db14c01ed22.bindTooltip(
+                `<div>
+                     Saskatchewan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8d71637401908adba277110ac0ff73ad = L.marker(
+                [-135.0, 64.2823],
+                {
+}
+            ).addTo(map_301b0c8e310ffbe58741a3d7ee343f3d);
+        
+    
+        var popup_87d96487eef43739dca1938ddd189ffe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d946fcfa8de8ef9ec169cc58ee8bebf = $(`<div id="html_7d946fcfa8de8ef9ec169cc58ee8bebf" style="width: 100.0%; height: 100.0%;">Location: Yukon<br>Total Sales: 105442.25</div>`)[0];
+                popup_87d96487eef43739dca1938ddd189ffe.setContent(html_7d946fcfa8de8ef9ec169cc58ee8bebf);
+            
+        
+
+        marker_8d71637401908adba277110ac0ff73ad.bindPopup(popup_87d96487eef43739dca1938ddd189ffe)
+        ;
+
+        
+    
+    
+            marker_8d71637401908adba277110ac0ff73ad.bindTooltip(
+                `<div>
+                     Yukon
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
